@@ -1,7 +1,11 @@
+import { PageTitle } from "@/components/shared"
+import { Outlet } from "react-router-dom"
+
 const Adherents = () => {
   return (
     <div>
-      Adhérents
+      <PageTitle>Liste des Adhérents</PageTitle>
+      <Outlet/>
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { Header, NavMenu } from "./layouts";
 
 
@@ -11,11 +12,11 @@ function App() {
 	  </div>
 	  <div className="flex flex-col">
 		<Header />
-		<main className="flex-1">
-
+		<main className="flex-1 p-4">
+			<Outlet/>
 		</main>
 	  </div>
-    </div>
+    </div>	
   )
 }
 
